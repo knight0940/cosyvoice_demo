@@ -1,14 +1,15 @@
 from tts import synthesize
 
-voice_id = "cosyvoice-v3.5-plus-vd-mydemo-2cf5d9f233bc49a196a3d410d03168a3"
+voice_id = "cosyvoice-v3.5-plus-mydemo-9effc6039d7046eda418b47ce8899b43"
 
 # 几条不同风格的台词，展示情绪控制能力
 lines = [
-    ("casual",   "今天练习顺利吗？我感觉状态还不错呢。",          None),
-    ("excited",  "哇，真的吗！那个新歌我也很喜欢！",              "用非常兴奋开心的语气说话，带着藏不住的笑意"),
-    ("cool",     "演出的事交给我就行了，没什么大不了的。",         "用慵懒随性、略带自信的语气说话"),
-    ("serious",  "音乐这件事，我是认真的。",                      "语气沉静而坚定，透出一种不容置疑的认真感"),
+    ("cool",     "ライブのことは任せといて。別に大したことじゃないし。",       "用慵懒随性、略带自信的语气说话"),
+    ("greeting", "おはよう！今日もよろしくね。",                             None),
+    ("thanks",   "ありがとう、助かったよ。本当に。",                         "语气温柔真诚，带着一点不好意思的感谢"),
+    ("serious",  "音楽のことは、本気だから。",                              "语气沉静而坚定，透出一种不容置疑的认真感"),
 ]
+
 
 for tag, text, instruction in lines:
     synthesize(
